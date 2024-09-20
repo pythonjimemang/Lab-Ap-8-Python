@@ -27,45 +27,34 @@ match data:
     case d if d > 50:
         data = "berat"
 
-# if data == "ringan" :
-#     rekomendasi = "tidak"
-#     if waktu == "off-peak":
-#         if jenis == "personal":
-#             rekomendasi = "Paket A"
-# elif data == "sedang":
-#     if waktu == "peak":
-#         if jenis == "personal":
-#             rekomendasi = "Paket B"
-# elif data == "berat" and waktu == "peak" and jenis == "personal" or jenis == "bisnis":
-#     if waktu == "peak":
-#         if jenis == "personal" or jenis == "bisnis":
-#             rekomendasi = "Paket C"
-# elif data == "berat" and waktu == "off-peak" and jenis == "bisnis":
-#     if waktu == "off-peak":
-#         if jenis == "bisnis":
-#             rekomendasi = "Paket D"
-# else:
-#     rekomendasi = "tidak"
-
-
-# if rekomendasi == "tidak":
-#     print("Tidak ada paket yang cocok")
-# else:
-#     print(f"rekomendasi untuk anda yaitu : {rekomendasi}")
-    
-    
-if data == "ringan" and waktu == "off-peak" and jenis == "personal":
-    rekomendasi = "Paket A"
-elif data == "sedang" and waktu == "peak" and jenis == "personal":
-    rekomendasi = "Paket B"
+if data == "ringan" :
+    rekomendasi = "tidak"
+    if waktu == "off-peak":
+        if jenis == "personal":
+            rekomendasi = "Paket A"
+elif data == "sedang":
+    rekomendasi = "tidak"
+    if waktu == "peak":
+        if jenis == "personal":
+            rekomendasi = "Paket B"
 elif data == "berat" and waktu == "peak" and jenis == "personal" or jenis == "bisnis":
-    rekomendasi = "Paket C"
+    rekomendasi = "tidak"
+    if waktu == "peak":
+        if jenis == "personal" or jenis == "bisnis":
+            rekomendasi = "Paket C"
 elif data == "berat" and waktu == "off-peak" and jenis == "bisnis":
-    rekomendasi = "Paket D"
+    rekomendasi = "tidak"
+    if waktu == "off-peak":
+        if jenis == "bisnis":
+            rekomendasi = "Paket D"
 else:
-    rekomendasi = "tidak cocok"
+    rekomendasi = "tidak"
 
-if rekomendasi == "tidak cocok":
+
+if rekomendasi == "tidak":
     print("Tidak ada paket yang cocok")
 else:
     print(f"rekomendasi untuk anda yaitu : {rekomendasi}")
+    
+    
+#  
