@@ -3,7 +3,7 @@ anggota = input("Apakah anda anggota (ya/tidak): ")
 
 # rekomendasi harga tiket
 if usia < 5:
-    harga_tiket= int("Gratis")
+    harga_tiket= 0
 elif 5<= usia <=12:
     harga_tiket= 50000
 elif 13<= usia <=59:
