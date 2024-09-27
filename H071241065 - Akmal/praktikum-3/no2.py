@@ -2,7 +2,7 @@ import random
 angka_rahasia = random.randint(1, 100)
 
 for i in range(5):
-    tebakan = int(input("masukkan tebakan anda(angak 1-100)(0 untuk berhenti): "))
+    tebakan = int(input("masukkan tebakan anda (hanya ankgka 1-100, ketik 0 untuk berhenti): "))
     
     if tebakan < 0 or tebakan > 100:
         print("hanya angka 1-100")
