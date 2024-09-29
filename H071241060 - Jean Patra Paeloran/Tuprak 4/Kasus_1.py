@@ -36,9 +36,9 @@ def mulai():
                 break
         if 21>=total1>total2 or total2>21:
             print("Anda menang!")
-        elif 21>total1<total2:
+        elif 21>=total1<total2:
             print("Dealer menang!")
-        elif 21>total1==total2:
+        elif 21>=total1==total2:
             print("Seri!")
 
 mulai()
